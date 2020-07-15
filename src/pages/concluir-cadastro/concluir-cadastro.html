@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ConcluirCadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="padrao">
+    <ion-title>Retomar Cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <p><strong>Nome: </strong>{{user.displayName}}</p>
+  </ion-item>
+  <ion-item>
+    <p><strong>Email: </strong>{{user.email}}</p>
+  </ion-item>
+  <ion-item>
+    <ion-label floating style="color:#a80611;">Endereço</ion-label>
+    <ion-input type="text" [(ngModel)]="endereco"></ion-input>
+  </ion-item>
+  <div style = "text-align:center">
+    <button ion-button item-end color="padrao" (click) = "confirmar_cadastro()">Finalizar</button>
+  </div>
+
+
+</ion-content>

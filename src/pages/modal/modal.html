@@ -1,0 +1,30 @@
+<!--
+  Generated template for the ModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color= "padrao">
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+ 
+</ion-header>
+
+<ion-content class="card-background-page" style="background-color:#d9d9d9; background-size: 100% 100%; background-repeat: no-repeat;" >
+    <ion-fab  absolute-drag bottom right>
+        <button ion-fab mini color = "padrao" style=" color:yellow;"><ion-icon name="pizza"></ion-icon></button>
+        <ion-fab-list side="left">
+          <button ion-fab color = "padrao" style=" color:white;" (click) = "telahome()" ><ion-icon name="home"></ion-icon></button>
+        </ion-fab-list>
+      </ion-fab>
+
+    <ion-card>
+        <img src= {{pizza.url}}/>
+        <div class="card-title">{{pizza.Nome}}</div>
+        <p padding style="text-align:justify; color:#a80611">{{pizza.ingredientes}}</p>
+        <p id="preco"><strong>R$ {{pizza.Preco}},00</strong></p>
+        <button ion-button item-end icon-left color="secondary" (click)= "finalizar_pedido()"><ion-icon name="cart"> Adicionar ao Carrinho</ion-icon></button>
+      </ion-card>
+</ion-content>

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="padrao">
+    <ion-title>Iniciar Sessão</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <div style="text-align: center;">
+      <img src="assets/imgs/logopizza.png" alt="">
+
+      <ion-item>
+            <ion-label floating style="color:#a80611;" >Email</ion-label>
+            <ion-input type="email" value="" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label floating style="color:#a80611;">Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+     
+      <ion-grid>
+            <ion-row >
+              <ion-col align-self-center>
+              <button ion-button mini style="font-size:100%" color = "padrao" (click)="login()" >Entrar</button>
+              <button ion-button style="font-size:100%" mini color = "facebook" (click)="login_com_facebook()" ><ion-icon name="logo-facebook"> Entrar com Facebook</ion-icon></button>
+              </ion-col>
+            </ion-row>
+            
+            <ion-row>
+              <ion-col align-self-center>
+              <button ion-button full id="botao" (click)="tela_cadastro()" >Cadastre-se gratuitamente</button>
+              </ion-col>
+            </ion-row>
+            
+      </ion-grid>
+        
+    </div>
+</ion-content>

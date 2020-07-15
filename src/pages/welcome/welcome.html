@@ -1,0 +1,44 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  
+
+</ion-header>
+
+
+<ion-content style="background-color:#d9d9d9" padding>
+
+    <ion-slides pager color = "danger">
+        
+        <ion-slide >
+          <img src="assets/imgs/logopizza.png"  alt="">
+          <h4 style="color:#a80611">Bem-vindo!<br>Pizza em sua casa!</h4>
+          <p style="text-align:center; font-size:13px;">Sua pizza mais perto de você</p>
+          <p style="text-align:center; font-size:13px;">Faça seu pedido e ganhe uma outra</p>
+
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/imgs/motoqueiro.png" alt="">
+            <h4 style="color:#a80611">O app do Pizza House <br>Vai até sua casa!</h4>
+            <p style="text-align:center; font-size:13px;">Escolha seu pedido e bom apetite.</p>
+               
+          </ion-slide>
+          <ion-slide>
+            <div style="text-align:right">
+              <button ion-button style=" background-color: #d9d9d9; color:#a80611" (click) = "pular()"><strong>Pular</strong></button>
+            </div>
+          
+          <img src="assets/imgs/mapa_quadrado.png" alt="">
+          <h4 style="color:#a80611">Sua pizza até você<br>Em sua casa</h4>
+          <button ion-button color ="padrao" (click)="localizacao_atual()">Permitir localização</button>
+          <button ion-button style=" background-color: #d9d9d9; color:#a80611" (click) = "pular()">Agora não</button>
+
+        </ion-slide>
+      </ion-slides>
+
+</ion-content>

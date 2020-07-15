@@ -1,0 +1,48 @@
+<!--
+  Generated template for the PizzasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  
+    <ion-navbar color = "padrao">
+      <ion-title>
+        Pizzas
+      </ion-title>
+     <!-- <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="cart" ></ion-icon>
+        </button>
+      </ion-buttons>!-->
+    </ion-navbar>
+  
+</ion-header>
+
+<ion-content  class="cor" style="background-color: white;  background-size: 100% 100%; background-repeat: no-repeat;" no-bounce overflow-scroll="false">
+
+      <ion-fab absolute-drag bottom right  >
+          <button ion-fab mini color = "padrao" style=" color:yellow;"><ion-icon name="pizza"></ion-icon></button>
+          <ion-fab-list side="left">
+            <button ion-fab color = "padrao" style=" color:white;" (click) = "telahome()" ><ion-icon name="home"></ion-icon></button>
+          </ion-fab-list>
+      </ion-fab>
+    
+    <ion-list>
+      <ion-item-sliding *ngFor="let item of pizzas | async">
+        <ion-item style="background-color:white">
+          <ion-thumbnail item-start (click)="abrir_modal(item)">
+            <img src = {{item.url}} style="width: 100px; height:70px;">
+          </ion-thumbnail>
+          <h5 style="color:#a80611; font-family:Roboto">{{ item.Nome }}</h5>
+          <p>R${{ item.Preco }}</p> 
+          <button ion-button item-end style="background-color:#a80611;" (click)="selecionar(item)"><ion-icon name="add"></ion-icon></button>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
+    <!--<div id ="center" >
+        <p color = "padrao"><strong>Ou</strong></p>
+        <button  ion-button round color="padrao" (click) = "montagem()">Monte sua Pizza</button>
+    </div> !-->  
+</ion-content>

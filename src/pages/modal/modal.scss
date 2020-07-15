@@ -1,0 +1,55 @@
+page-modal {
+
+    img{
+        position: relative;
+        
+        //filter: brightness(70%);
+    }
+    
+    
+    .card-background-page {
+
+        ion-card {
+          background-color: white;
+          position: relative;
+          text-align: center;
+         // border-radius: 3%;
+        }
+      
+        .card-title {
+          position: absolute;
+            //top: 0%;
+           
+         // right: 13%;
+            
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color:#a80611;
+        }
+        p{
+        
+        text-align: justify;
+        margin-top: 40px;
+       /*padding-top: 30px;
+        padding-left: 5px;*/
+        }
+
+        button{
+        text-align: center;
+        margin-bottom: 10px;
+        
+        
+        }
+      #preco{
+        font-size: 2.0em;
+        color:#a80611;
+        text-align: center;
+          }
+
+    }
+      
+
+}
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-navbar color = "padrao">
+    <ion-title>
+      Pizza House
+    </ion-title>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: white" padding id="inicio">
+  <ion-fab absolute-drag bottom right style="position:fixed;">
+      <button mini color = "padrao" ion-fab  style=" color:yellow;"><ion-icon name="pizza"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab color = "padrao" style=" color:white;"(click) = "telalogin()" ><ion-icon name="person"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+ 
+  <div style="text-align:center;margin-top:40px">
+      <img src="assets/imgs/logopizza.png" alt="">
+      
+            <button ion-button color="padrao" (click)="tela_cardapio()" ><ion-icon>Faça seu Pedido</ion-icon></button>
+          
+            <button ion-button  color="padrao" (click)="tela_mapa()"><ion-icon name="">Ver Localização</ion-icon> </button>
+          
+      <button ion-button class = "instagram" (click)="instagram()"><ion-icon name="logo-instagram"> Siga nossa página </ion-icon></button> 
+  </div>  
+  
+
+</ion-content>

@@ -1,0 +1,41 @@
+<!--
+  Generated template for the CadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color = "padrao">
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating style="color:#a80611;">Nome Completo</ion-label>
+        <ion-input type="text" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+    <ion-item>
+        <ion-label floating style="color:#a80611;" >Email</ion-label>
+        <ion-input type="email"  value="" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating style="color:#a80611;">Endereço</ion-label>
+        <ion-input type="text" [(ngModel)]="endereco"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating style="color:#a80611;">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating style="color:#a80611;">Confirmar Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="csenha"></ion-input>
+    </ion-item>
+
+    <div id="botao">
+        <button ion-button item-end color="padrao" (click) = "cadastro()">Finalizar</button>
+    </div>
+
+</ion-content>
